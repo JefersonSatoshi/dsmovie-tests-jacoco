@@ -32,6 +32,10 @@ public class MovieDTO {
 	@URL(message = "Field must be a valid url")
 	private String image;
 
+	public MovieDTO() {
+
+	}
+
 	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;

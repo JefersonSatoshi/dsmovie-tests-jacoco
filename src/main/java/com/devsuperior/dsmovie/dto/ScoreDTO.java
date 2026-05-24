@@ -20,6 +20,10 @@ public class ScoreDTO {
 	@PositiveOrZero(message = "Score should be greater than or equal to zero")
 	@Max(value = 5, message = "Score should not be greater than five")
 	private Double score;
+	
+	public ScoreDTO() {
+
+	}
 
 	public ScoreDTO(Long movieId, Double score) {
 		this.movieId = movieId;
