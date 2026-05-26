@@ -32,7 +32,7 @@ public class MovieController {
 
 	@GetMapping
 	public Page<MovieDTO> findAll(
-			@RequestParam(value="title", defaultValue = "") String title, 
+			@RequestParam(value="title", required = false) String title, 
 			Pageable pageable) {
 		return service.findAll(title, pageable);
 	}
